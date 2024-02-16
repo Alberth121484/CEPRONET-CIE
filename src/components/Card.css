@@ -1,0 +1,38 @@
+/* Card.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.card {
+  @apply rounded-xl shadow-md p-4 m-2 transition-transform transform-gpu duration-300;
+
+  &:hover {
+    @apply scale-105;
+  }
+
+  .card-content {
+    @apply flex flex-col items-center;
+  }
+
+  .card-title {
+    @apply text-lg font-semibold mb-2;
+  }
+
+  .card-text {
+    @apply text-gray-600 mb-4;
+  }
+
+  .card-image {
+    @apply w-16 h-16 object-cover rounded-full;
+  }
+
+  /* Cambio aquí */
+  @screen md {
+    @apply md:w-1/2;
+  }
+
+  /* Cambio aquí */
+  @screen lg {
+    @apply lg:w-1/3;
+  }
+}
