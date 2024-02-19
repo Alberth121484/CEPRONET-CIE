@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const clienteAxios = axios.create({
-    baseURL: `${import.meta.env.VITE_BACKEND_URL}/api`
+    baseURL: 'https://cepronetciebackend-dev-hrjq.1.us-1.fl0.io/api'
 })
 
 export default clienteAxios;
